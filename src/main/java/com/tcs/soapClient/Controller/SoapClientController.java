@@ -14,7 +14,7 @@ public class SoapClientController {
 	@Autowired 
 	SoapClientService soapClientService;
 	
-	@RequestMapping(value = "/soapClient", method = RequestMethod.POST)
+	@RequestMapping(value = "", method = RequestMethod.POST)
 	public @ResponseBody String getClients(@RequestBody Request request){
 		
 		return soapClientService.clientResponse(request);
